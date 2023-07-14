@@ -1,0 +1,538 @@
+{
+    "giorno": {
+        "2023-06-03": {
+            "turno": {
+                "8-9": {
+                    "nome": "Piero",
+                    "cognome": "de vincentis",
+                    "recapito": "34965541236",
+                    "taglio": "Taglio uomo"
+                },
+                "9-10": {},
+                "10-11": {},
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {
+                    "nome": "costantino",
+                    "cognome": "tigano",
+                    "recapito": "3493861093",
+                    "taglio": "Taglio uomo"
+                },
+                "18-19": {}
+            }
+        },
+        "2023-06-01": {
+            "turno": {
+                "8-9": {},
+                "9-10": {},
+                "10-11": {},
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {
+                    "nome": "donato",
+                    "cognome": "di zinno",
+                    "recapito": "354789654",
+                    "taglio": "Taglio donna"
+                },
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-08-03": {
+            "turno": {
+                "8-9": {
+                    "nome": "cristian",
+                    "cognome": "colavito",
+                    "recapito": "3452001269",
+                    "taglio": "Taglio barba"
+                },
+                "9-10": {
+                    "nome": "luca",
+                    "cognome": "de rossi",
+                    "recapito": "3496541230",
+                    "taglio": "Taglio uomo"
+                },
+                "10-11": {},
+                "11-12": {
+                    "nome": "luca",
+                    "cognome": "tigano",
+                    "recapito": "515486",
+                    "taglio": "Taglio barba"
+                },
+                "12-13": {
+                    "nome": "giorgio",
+                    "cognome": "di lena",
+                    "recapito": "3547896541",
+                    "taglio": "Taglio uomo"
+                },
+                "14-15": {
+                    "nome": "luca",
+                    "cognome": "rossi",
+                    "recapito": "3498754102",
+                    "taglio": "Taglio uomo"
+                },
+                "15-16": {
+                    "nome": "uituy",
+                    "cognome": "yi7y7i",
+                    "recapito": "3496520132",
+                    "taglio": "Taglio barba"
+                },
+                "17-18": {
+                    "nome": "giorgia",
+                    "cognome": "rossi",
+                    "recapito": "3498547852",
+                    "taglio": "Taglio donna"
+                },
+                "18-19": {}
+            }
+        },
+        "2023-08-07": {
+            "turno": {
+                "8-9": {
+                    "nome": "francesco",
+                    "cognome": "tigano",
+                    "recapito": "3496541230",
+                    "taglio": "Taglio barba"
+                },
+                "9-10": {
+                    "nome": "luisa",
+                    "cognome": "neri",
+                    "recapito": "3458745698",
+                    "taglio": "Taglio donna"
+                },
+                "10-11": {
+                    "nome": "giorgia",
+                    "cognome": "bruno",
+                    "recapito": "3458796555",
+                    "taglio": "Taglio donna"
+                },
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-08-01": {
+            "turno": {
+                "8-9": {
+                    "nome": "claudia",
+                    "cognome": "leone",
+                    "recapito": "4685468468",
+                    "taglio": "Taglio donna"
+                },
+                "9-10": {},
+                "10-11": {},
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-08-02": {
+            "turno": {
+                "8-9": {
+                    "nome": "vdger",
+                    "cognome": "gtegeter",
+                    "recapito": "3458745896",
+                    "taglio": "Taglio barba"
+                },
+                "9-10": {},
+                "10-11": {},
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-06-08": {
+            "turno": {
+                "8-9": {},
+                "9-10": {
+                    "nome": "luca",
+                    "cognome": "tigano",
+                    "recapito": "468468",
+                    "taglio": "Taglio barba"
+                },
+                "10-11": {},
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-06-05": {
+            "turno": {
+                "8-9": {},
+                "9-10": {},
+                "10-11": {
+                    "nome": "costantino",
+                    "cognome": "tigano",
+                    "recapito": "35435468",
+                    "taglio": "Taglio uomo"
+                },
+                "11-12": {
+                    "nome": "giorgio",
+                    "cognome": "leone",
+                    "recapito": "354546846",
+                    "taglio": "Taglio barba"
+                },
+                "12-13": {
+                    "nome": "luca",
+                    "cognome": "rossi",
+                    "recapito": "354684864",
+                    "taglio": "Taglio barba"
+                },
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-06-06": {
+            "turno": {
+                "8-9": {},
+                "9-10": {},
+                "10-11": {
+                    "nome": "pierluigi",
+                    "cognome": "de vincentis",
+                    "recapito": "3547896541",
+                    "taglio": "Taglio uomo"
+                },
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-06-18": {
+            "turno": {
+                "8-9": {},
+                "9-10": {},
+                "10-11": {
+                    "nome": "Piero",
+                    "cognome": "de vincentis",
+                    "recapito": "34965541236",
+                    "taglio": "Taglio uomo"
+                },
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-08-09": {
+            "turno": {
+                "8-9": {},
+                "9-10": {},
+                "10-11": {},
+                "11-12": {},
+                "12-13": {},
+                "14-15": {
+                    "nome": "luca",
+                    "cognome": "rossi",
+                    "recapito": "3469874102",
+                    "taglio": "Piega"
+                },
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-06-11": {
+            "turno": {
+                "8-9": {},
+                "9-10": {},
+                "10-11": {
+                    "nome": "rrgerw",
+                    "cognome": "rrgge",
+                    "recapito": "6468486",
+                    "taglio": "Taglio barba"
+                },
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-07-22": {
+            "turno": {
+                "8-9": {
+                    "nome": "costantino",
+                    "cognome": "tigano",
+                    "recapito": "3496543210",
+                    "taglio": "Taglio uomo"
+                },
+                "9-10": {},
+                "10-11": {},
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-07-23": {
+            "turno": {
+                "8-9": {},
+                "9-10": {},
+                "10-11": {},
+                "11-12": {},
+                "12-13": {},
+                "14-15": {
+                    "nome": "luca",
+                    "cognome": "rossi",
+                    "recapito": "3459874520",
+                    "taglio": "Taglio uomo"
+                },
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-09-02": {
+            "turno": {
+                "8-9": {
+                    "nome": "costa",
+                    "cognome": "tig",
+                    "recapito": "3496542130",
+                    "taglio": "Taglio uomo"
+                },
+                "9-10": {},
+                "10-11": {},
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-08-11": {
+            "turno": {
+                "8-9": {
+                    "nome": "costantino",
+                    "cognome": "tigano",
+                    "recapito": "3216549870",
+                    "taglio": "Taglio uomo"
+                },
+                "9-10": {},
+                "10-11": {},
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-08-16": {
+            "turno": {
+                "8-9": {},
+                "9-10": {},
+                "10-11": {},
+                "11-12": {},
+                "12-13": {
+                    "nome": "costantino",
+                    "cognome": "di legge",
+                    "recapito": "3456987412",
+                    "taglio": "Taglio barba"
+                },
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-08-04": {
+            "turno": {
+                "8-9": {
+                    "nome": "luca",
+                    "cognome": "rossi",
+                    "recapito": "3495874120",
+                    "taglio": "Taglio barba e taglio uomo"
+                },
+                "9-10": {
+                    "nome": "luca",
+                    "cognome": "esci",
+                    "recapito": "3469876541",
+                    "taglio": "Taglio uomo"
+                },
+                "10-11": {
+                    "nome": "federica",
+                    "cognome": "viola",
+                    "recapito": "3456987452",
+                    "taglio": "Taglio donna e acconciatura"
+                },
+                "11-12": {
+                    "nome": "giorgio",
+                    "cognome": "leone",
+                    "recapito": "3458741023",
+                    "taglio": "Taglio barba"
+                },
+                "12-13": {
+                    "nome": "cristian",
+                    "cognome": "colavito",
+                    "recapito": "3458741032",
+                    "taglio": "Taglio uomo"
+                },
+                "14-15": {
+                    "nome": "luca",
+                    "cognome": "scrascia",
+                    "recapito": "3496587410",
+                    "taglio": "Taglio barba"
+                },
+                "15-16": {
+                    "nome": "costantino",
+                    "cognome": "tigano",
+                    "recapito": "3458741036",
+                    "taglio": "Taglio uomo"
+                },
+                "17-18": {
+                    "nome": "giorgio",
+                    "cognome": "di paolo",
+                    "recapito": "3485478963",
+                    "taglio": "Taglio uomo"
+                },
+                "18-19": {
+                    "nome": "luca",
+                    "cognome": "rossi",
+                    "recapito": "3498745630",
+                    "taglio": "Taglio barba"
+                }
+            }
+        },
+        "2023-08-06": {
+            "turno": {
+                "8-9": {},
+                "9-10": {
+                    "nome": "silvia",
+                    "cognome": "rossi",
+                    "recapito": "3458745632",
+                    "taglio": "Taglio donna"
+                },
+                "10-11": {},
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {
+                    "nome": "franco",
+                    "cognome": "de laurentis",
+                    "recapito": "3496587423",
+                    "taglio": "Taglio barba e taglio uomo"
+                },
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-08-10": {
+            "turno": {
+                "8-9": {
+                    "nome": "serena",
+                    "cognome": "di vito",
+                    "recapito": "3496587412",
+                    "taglio": "Taglio donna"
+                },
+                "9-10": {
+                    "nome": "cristian",
+                    "cognome": "colavito",
+                    "recapito": "3459874560",
+                    "taglio": "Taglio barba"
+                },
+                "10-11": {
+                    "nome": "silvia",
+                    "cognome": "rossi",
+                    "recapito": "3459874563",
+                    "taglio": "Taglio donna"
+                },
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {}
+            }
+        },
+        "2023-08-13": {
+            "turno": {
+                "8-9": {},
+                "9-10": {},
+                "10-11": {},
+                "11-12": {},
+                "12-13": {
+                    "nome": "costa",
+                    "cognome": "tig",
+                    "recapito": "3458796541",
+                    "taglio": "Taglio barba"
+                },
+                "14-15": {
+                    "nome": "francesca",
+                    "cognome": "iacovelli",
+                    "recapito": "3469874520",
+                    "taglio": "Taglio donna"
+                },
+                "15-16": {},
+                "17-18": {
+                    "nome": "luciano",
+                    "cognome": "rossi",
+                    "recapito": "3495874563",
+                    "taglio": "Taglio barba e taglio uomo"
+                },
+                "18-19": {}
+            }
+        },
+        "2023-07-06": {
+            "turno": {
+                "8-9": {},
+                "9-10": {},
+                "10-11": {},
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {},
+                "18-19": {
+                    "nome": "buongiorno",
+                    "cognome": "de lellis",
+                    "recapito": "3498745201",
+                    "taglio": "Taglio uomo"
+                }
+            }
+        },
+        "2023-07-07": {
+            "turno": {
+                "8-9": {},
+                "9-10": {},
+                "10-11": {},
+                "11-12": {},
+                "12-13": {},
+                "14-15": {},
+                "15-16": {},
+                "17-18": {
+                    "nome": "piero",
+                    "cognome": "de vincentis",
+                    "recapito": "3458796542",
+                    "taglio": "Taglio barba e taglio uomo"
+                },
+                "18-19": {}
+            }
+        }
+    }
+}

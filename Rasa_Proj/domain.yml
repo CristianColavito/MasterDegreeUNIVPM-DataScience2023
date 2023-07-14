@@ -1,0 +1,397 @@
+version: '3.1'
+
+
+intents:
+  - saluto
+  - bot_challenge
+  - prenotazione
+  - inserimento_taglio
+  - inserimento_data
+  - inserimento_recapito
+  - inserimento_orario
+  - cancella_prenotazione
+  - modifica_prenotazione
+  - conferma
+  - nega
+  - curiosità
+  - consigli
+  - info_orari
+  - info_località
+  - info_contatti
+  - info_costo
+
+
+
+
+
+entities:
+  - taglio
+  - orario
+  - prodotto
+
+slots:
+
+  nome:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: colleziona_dati_prenotazione_form
+        requested_slot: nome
+        
+
+
+  cognome:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: colleziona_dati_prenotazione_form
+        requested_slot: cognome
+
+        
+
+  recapito:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: colleziona_dati_prenotazione_form
+        requested_slot: recapito
+    - type: from_text
+      conditions:
+      - active_loop: elimina_prenotazione_form
+        requested_slot: recapito
+    - type: from_text
+      conditions:
+      - active_loop: modifica_prenotazione_form
+        requested_slot: recapito
+
+
+
+
+  taglio:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: taglio
+      intent: inserimento_taglio
+
+
+
+
+  data:
+    type: text
+    mappings:
+    - type: from_text
+      conditions:
+      - active_loop: colleziona_dati_prenotazione_form
+        requested_slot: data
+    - type: from_text
+      conditions:
+      - active_loop: elimina_prenotazione_form
+        requested_slot: data
+    - type: from_text
+      conditions:
+      - active_loop: modifica_prenotazione_form
+        requested_slot: data
+
+  data_mod:
+    type: text
+    mappings:
+    - type: from_text
+      intent: inserimento_data
+      conditions:
+      - active_loop: modifica_prenotazione_form
+        requested_slot: data_mod
+
+  orario:
+    type: text
+    mappings:
+    - type: from_entity
+      entity: orario
+      intent: inserimento_orario
+
+  conferma_data:
+    type: bool
+    mappings: 
+    - type: from_intent
+      value: true
+      intent: conferma
+      conditions:
+      - active_loop: modifica_prenotazione_form
+        requested_slot: conferma_data
+    - type: from_intent
+      value: false
+      intent: nega
+      conditions:
+      - active_loop: modifica_prenotazione_form
+        requested_slot: conferma_data
+
+  conferma_orario:
+    type: bool
+    mappings: 
+    - type: from_intent
+      value: true
+      intent: conferma
+      conditions:
+      - active_loop: modifica_prenotazione_form
+        requested_slot: conferma_orario
+    - type: from_intent
+      value: false
+      intent: nega
+      conditions:
+      - active_loop: modifica_prenotazione_form
+        requested_slot: conferma_orario
+
+  conferma_taglio:
+    type: bool
+    mappings:
+    - type: from_intent
+      value: true
+      intent: conferma
+      conditions:
+      - active_loop: modifica_prenotazione_form
+        requested_slot: conferma_taglio
+    - type: from_intent
+      value: false
+      intent: nega
+      conditions:
+      - active_loop: modifica_prenotazione_form
+        requested_slot: conferma_taglio
+
+  
+
+  prodotto:
+    type: categorical
+    influence_conversation: true
+    values:
+      - crespi
+      - ricci
+      - lisci
+    mappings:
+    - type: from_entity
+      entity: prodotto
+      intent: consigli
+# Alternativamente avrei potuto definirla usando una custom action required_slot per ogni form
+  conferma:
+    type: bool
+    mappings: 
+    - type: from_intent
+      value: true
+      intent: conferma
+      conditions:
+      - active_loop: colleziona_dati_prenotazione_form
+        requested_slot: conferma
+    - type: from_intent
+      value: false
+      intent: nega
+      conditions:
+      - active_loop: colleziona_dati_prenotazione_form
+        requested_slot: conferma
+    - type: from_intent
+      value: true
+      intent: conferma
+      conditions:
+      - active_loop: modifica_prenotazione_form
+        requested_slot: conferma
+    - type: from_intent
+      value: false
+      intent: nega
+      conditions:
+      - active_loop: modifica_prenotazione_form
+        requested_slot: conferma
+    - type: from_intent
+      value: true
+      intent: conferma
+      conditions:
+      - active_loop: elimina_prenotazione_form
+        requested_slot: conferma
+    - type: from_intent
+      value: false
+      intent: nega
+      conditions:
+      - active_loop: elimina_prenotazione_form
+        requested_slot: conferma
+
+
+
+
+
+forms:
+  colleziona_dati_prenotazione_form:
+    required_slots:
+      - nome
+      - cognome
+      - recapito
+      - taglio
+      - data
+      - orario
+      - conferma
+      
+      
+      
+
+  elimina_prenotazione_form:
+    required_slots:
+      - data
+      - recapito
+      - conferma
+      
+  modifica_prenotazione_form:
+    required_slots:
+      - data
+      - recapito
+      - conferma_data
+      - data_mod
+      - conferma_orario
+      - orario
+      - conferma_taglio
+      - taglio
+      - conferma
+
+
+
+
+
+
+
+
+responses:
+  utter_saluto:
+  - text: Ciao come posso esserti utile?
+  - text: salve come posso esserti utile?
+  - text: come posso esserti utile?
+
+  utter_info_orari:
+  - text: "Siamo aperti tutti i giorni dalle 8 alle 19"
+
+  utter_info_località:
+  - text: "Ci trovi ad Ancona in via po 22"
+
+  utter_info_contatti:
+  - text: "Ecco il contatto del salone: 3469874520"
+
+  utter_costo:
+  - text: "I prezzi per un taglio uomo sono di 15 euro, 20 per un taglio donna"
+
+  utter_ask_colleziona_dati_prenotazione_form_conferma:
+  - text: "Sicuro di voler completare l'operazione?"
+
+  utter_ask_elimina_prenotazione_form_conferma:
+  - text: "Sicuro di voler completare l'operazione?"
+
+  utter_ask_modifica_prenotazione_form_conferma:
+  - text: "Sicuro di voler completare l'operazione?"
+
+  utter_ask_nome:
+  - text: Inserisci nome
+
+  utter_ask_cognome:
+  - text: Inserisci cognome
+
+  utter_ask_data:
+  - text: Inserisci data nel fomrato YYYY-MM-DD
+
+  utter_ask_recapito:
+  - text: Inserisci numero di telefono
+
+  utter_bot_challenge:
+  - text: Sono un'intelligenza arificiale nata per gestire le prenotazioni di un salone
+
+  utter_submit:
+  - text: "Grazie per aver inserito i tuoi dati. L'operazione si è conclusa con successo."
+  
+  utter_ask_taglio:
+  - text: "Scegli tra i seguenti servizi"
+    buttons:
+    - title: "Taglio barba e taglio uomo"
+      payload: '/inserimento_taglio{{"taglio":"Taglio barba e taglio uomo"}}'
+    - title: "Taglio uomo"
+      payload: '/inserimento_taglio{{"taglio":"Taglio uomo"}}'
+    - title: "Taglio donna"
+      payload: '/inserimento_taglio{{"taglio":"Taglio donna"}}'
+    - title: "Taglio donna e colore"
+      payload: '/inserimento_taglio{{"taglio":"Taglio donna e colore"}}'
+    - title: "Taglio donna e acconciatura"
+      payload: '/inserimento_taglio{{"taglio":"Taglio donna e acconciatura"}}'
+    - title: "Trattamento cute e capelli"
+      payload: '/inserimento_taglio{{"taglio":"Trattamento cute e capelli"}}'
+    button_type: vertical
+  
+
+  utter_ask_modifica_prenotazione_form_data:
+  - text: "Inserisci la data con cui hai prenotato in precedenza (formato: YY-MM-DD)"
+
+
+  utter_ask_modifica_prenotazione_form_recapito:
+  - text: "Inserisci il numero con cui hai prenotato in precedenza"
+
+
+  utter_ask_modifica_prenotazione_form_conferma_data:
+  - text: "Vuoi modificare la data?"
+
+  utter_ask_modifica_prenotazione_form_conferma_orario:
+  - text: "Vuoi modificare l'orario?"
+
+  utter_ask_modifica_prenotazione_form_data_mod:
+  - text: "Inserisci la nuova data nel formato (YYYY-MM-DD)"
+
+  utter_ask_modifica_prenotazione_form_conferma_taglio:
+  - text: "Vuoi cambiare il taglio prenotato?"
+
+  utter_prosegui:
+  - text: C'è altro che posso fare per te?
+
+
+  utter_curiosità:
+  - text: I capelli crescono maggiormente d'estate poichè l'esposizione al sole favorisce leggermente la loro crescita
+  - text: Lavare spesso i capelli non li indebolisce se non si usano detergenti aggressivi che eliminano il sebo naturale
+  - text: È di 950 km la lunghezza raggiunta dalla crescita di capelli durante un’intera vita.
+  - text: In un dato momento, abbiamo il 90% dei capelli sulla tua testa che cresce, mentre il 10% riposa.
+  - text: Meno del 2% della popolazione mondiale ha i capelli naturalmente rossi.
+
+
+  utter_fallback:
+  - text: Sono in grado di creare, modificare  eliminare prenotazioni per capelli. Però se preferisci di dico qualche curiosità o qualche consiglio per prodotti per capelli lisci, ricci e crespi.
+  - text: Scusami, non ho capito ciò che hai scritto, se preferisci parlare con qualcuno chiedimi un contatto telefonico.
+
+  utter_prodotto:
+    - condition:
+      - type: slot
+        name: prodotto
+        value: crespi
+      text: Ecco un prodotto per capelli crespi
+      image: "https://www.lineacapelli.it/it/capelli-secchi/67-shampoo-s2-per-capelli-secchi-e-crespi-350ml-echosline-8033210292066.html"
+    - condition:
+      - type: slot
+        name: prodotto
+        value: lisci
+      text: Ecco un prodotto per capelli lisci
+      image: https://www.tuttodetersivi.it/prodotto/sunsilk-cocreations-liscio-perfetto-shampoo-per-capelli-lisci-250ml/10484
+    - condition:
+      - type: slot
+        name: prodotto
+        value: ricci
+      text: Ecco un prodotto per capelli ricci
+      image: https://www.tuttodetersivi.it/prodotto/sunsilk-cocreations-ricci-da-domare-shampoo-per-capelli-ricci-e-mossi-250ml/34739
+
+
+
+
+
+
+actions:
+
+- validate_colleziona_dati_prenotazione_form
+- action_ask_colleziona_dati_prenotazione_form_orario
+- scrivi_prenotazione
+- validate_elimina_prenotazione_form
+- elimina_prenotazione
+- validate_modifica_prenotazione_form
+- action_ask_modifica_prenotazione_form_orario
+- modifica_prenotazione
+
+session_config:
+  session_expiration_time: 60
+  carry_over_slots_to_new_session: true

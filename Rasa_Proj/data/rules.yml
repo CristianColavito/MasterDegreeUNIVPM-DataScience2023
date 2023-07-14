@@ -1,0 +1,53 @@
+version: "3.1"
+
+rules:
+
+
+
+- rule: fall_back
+  steps: 
+  - intent: nlu_fallback
+  - action: utter_fallback
+
+
+
+- rule: Esegui_appuntamento
+  steps:
+  - intent: prenotazione
+  - action: colleziona_dati_prenotazione_form
+  - active_loop: colleziona_dati_prenotazione_form
+
+
+- rule: Submit_Prenotazione
+  condition:
+  - active_loop: colleziona_dati_prenotazione_form
+  steps:
+  - action: colleziona_dati_prenotazione_form
+  - active_loop: null
+  - slot_was_set:
+    - requested_slot: null
+  - action: scrivi_prenotazione
+  - action: action_restart
+  
+
+- rule: elimina_appuntamento
+  steps:
+    - intent: cancella_prenotazione
+    - action: elimina_prenotazione_form
+    - action: elimina_prenotazione
+    - action: action_restart
+ 
+- rule: modifica_form
+  steps:
+    - intent: modifica_prenotazione
+    - action: modifica_prenotazione_form
+    - action: modifica_prenotazione
+    - action: action_restart
+
+
+
+- rule: saluto
+  conversation_start: true
+  steps:
+  - intent: saluto
+  - action: utter_saluto

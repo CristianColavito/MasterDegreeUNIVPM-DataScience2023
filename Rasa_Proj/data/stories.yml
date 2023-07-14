@@ -1,0 +1,90 @@
+version: "3.1"
+
+
+stories:
+
+
+- story: saluta ogni volta che l'utente saluta
+  steps:
+  - intent: saluto
+  - action: utter_saluto
+
+
+- story: consiglio_prodotto
+  steps:
+    - intent: consigli
+    - action: utter_prodotto
+
+- story: bot_path
+  steps:
+    - intent: saluto
+    - action: utter_saluto
+    - intent: bot_challenge
+    - action: utter_bot_challenge
+
+- story: bot_short_path
+  steps:
+    - intent: bot_challenge
+    - action: utter_bot_challenge
+
+
+
+- story: curiosità_path
+  steps:
+    - intent: saluto
+    - action: utter_saluto
+    - intent: curiosità
+    - action: utter_curiosità
+
+
+- story: curiosità_short_path
+  steps:
+    - intent: curiosità
+    - action: utter_curiosità
+
+
+- story: consiglio_prodotto
+  steps:
+    - intent: consigli
+    - action: utter_prodotto
+
+
+
+- story: Info_orari_path
+  steps:
+  - intent: info_orari
+  - action: utter_info_orari
+  
+
+- story: Info_località
+  steps:
+  - intent: info_località
+  - action: utter_info_località
+
+
+
+
+- story: Info_contatti
+  steps:
+  - intent: info_contatti
+  - action: utter_info_contatti
+    
+
+
+- story: Info_prezzi
+  steps:
+  - intent: info_costo
+  - action: utter_costo
+
+
+- story: Info
+  steps:
+  - intent: info_località
+  - action: utter_info_località
+  - intent: info_orari
+  - action: utter_info_orari
+  - intent: info_costo
+  - action: utter_costo
+  - intent: info_contatti
+  - action: utter_info_contatti
+    

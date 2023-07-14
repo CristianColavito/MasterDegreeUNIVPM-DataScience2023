@@ -1,0 +1,286 @@
+[
+  {
+    "text": "salve",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nome",
+        "start": 0,
+        "end": 5,
+        "value": "salve",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "ciao amico",
+    "entities": [],
+    "predicted_entities": [
+      {
+        "entity": "nome",
+        "start": 5,
+        "end": 10,
+        "value": "amico",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "tigano",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "tigano",
+        "entity": "cognome"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cognome",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9989344477653503,
+        "value": "tigano",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "di zinno",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "di zinno",
+        "entity": "cognome"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cognome",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9984747767448425,
+        "value": "di zinno",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "di legge",
+    "entities": [
+      {
+        "start": 0,
+        "end": 8,
+        "value": "di legge",
+        "entity": "cognome"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cognome",
+        "start": 0,
+        "end": 8,
+        "confidence_entity": 0.9979118704795837,
+        "value": "di legge",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "rossi",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "rossi",
+        "entity": "cognome"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cognome",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9984971284866333,
+        "value": "rossi",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "nome",
+        "start": 0,
+        "end": 5,
+        "value": "rossi",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "cognome",
+        "start": 0,
+        "end": 5,
+        "value": "rossi",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "basler",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "basler",
+        "entity": "cognome"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cognome",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9992582201957703,
+        "value": "basler",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "leone",
+    "entities": [
+      {
+        "start": 0,
+        "end": 5,
+        "value": "leone",
+        "entity": "cognome"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cognome",
+        "start": 0,
+        "end": 5,
+        "confidence_entity": 0.9989414811134338,
+        "value": "leone",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "nome",
+        "start": 0,
+        "end": 5,
+        "value": "leone",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "cognome",
+        "start": 0,
+        "end": 5,
+        "value": "leone",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  },
+  {
+    "text": "tutolo",
+    "entities": [
+      {
+        "start": 0,
+        "end": 6,
+        "value": "tutolo",
+        "entity": "cognome"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cognome",
+        "start": 0,
+        "end": 6,
+        "confidence_entity": 0.9987289309501648,
+        "value": "tutolo",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "antonacci",
+    "entities": [
+      {
+        "start": 0,
+        "end": 9,
+        "value": "antonacci",
+        "entity": "cognome"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cognome",
+        "start": 0,
+        "end": 9,
+        "confidence_entity": 0.9988586902618408,
+        "value": "antonacci",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      }
+    ]
+  },
+  {
+    "text": "De Rosa",
+    "entities": [
+      {
+        "start": 0,
+        "end": 7,
+        "value": "De Rosa",
+        "entity": "cognome"
+      }
+    ],
+    "predicted_entities": [
+      {
+        "entity": "cognome",
+        "start": 0,
+        "end": 7,
+        "confidence_entity": 0.997878909111023,
+        "value": "De Rosa",
+        "extractor": "DIETClassifier",
+        "processors": [
+          "EntitySynonymMapper"
+        ]
+      },
+      {
+        "entity": "nome",
+        "start": 3,
+        "end": 7,
+        "value": "Rosa",
+        "extractor": "RegexEntityExtractor"
+      },
+      {
+        "entity": "cognome",
+        "start": 0,
+        "end": 7,
+        "value": "De Rosa",
+        "extractor": "RegexEntityExtractor"
+      }
+    ]
+  }
+]

@@ -1,0 +1,229 @@
+version: "3.1"
+nlu:
+- intent: saluto
+  examples: |
+    - ciao
+    - buongiorno
+    - buonasera
+    - salve
+    - hei
+    - hey
+    - weee
+    - ciao a tutti
+    - Daje
+    - ciao amico
+    - buon giorno
+
+
+- intent: bot_challenge
+  examples: |
+    - Cosa sei?
+    - Cosa vuoi?
+    - Sto parlando con un bot?
+    - Parlo con un uomo?
+    - Chi sei?
+    - Che c'è?
+    - Che vuoi?
+    - Ma sei uomo?
+    - Sei un computer?
+    - Con chi parlo?
+
+
+- intent: prenotazione
+  examples: |
+    - Vorrei prenotare
+    - Voglio fissare un appuntamento
+    - Come posso prenotare?
+    - Come posso fissare un appuntamento?
+    - Prenotazione
+    - Appuntamento
+    - Posso effettuare prenotazioni?
+    - Posso fissare un appuntamento?
+    - Come faccio a prenotare?
+    - Come devo fare?
+    - Cosa devo fare per prenotare?
+    - Vorrei tagliarmi i capelli
+
+
+
+    
+
+- intent: inserimento_taglio
+  examples: |
+    - [Taglio uomo](taglio)
+    - [Taglio barba](taglio)
+    - [Taglio donna](taglio)
+    - [Piega](taglio)
+    - [colore](taglio)
+    - [Scrub](taglio)
+    - [Acconciatura](taglio)
+
+
+- intent: inserimento_data
+  examples: |
+    - 2023-06-15
+    - 2023-06-05
+    - 2023-06-24
+    - 2023-06-30
+    - 2023-07-06
+    - 2023-07-17
+    - 2023-07-23
+    - 2023-07-31
+    - 2023-08-04
+    - 2023-08-12
+    - 2023-08-28
+    - 2023-08-31
+    - 2023-09-01
+    - 2023-09-11
+    - 2023-09-29
+    - 2023-10-02
+    - 2023-10-13
+    - 2024-01-16
+    - 2024-02-26
+
+
+
+
+- intent: inserimento_orario
+  examples: |
+    - [8-9](orario)
+    - [9-10](orario)
+
+
+- intent: inserimento_recapito
+  examples: |
+    - 3496548741
+    - 3456987412
+    - 3456987412
+    - 34569895
+    - 35548486468
+    - 5143545454
+    - 3468484
+    - 3
+    - 32
+    - 345
+    - 37848648684
+    - 3484848488
+    - 3446848648
+    - 3745165189
+    - 3415161868
+    
+
+- intent: cancella_prenotazione
+  examples: |
+    - Vorrei cancellare una prenotare
+    - Voglio eliminare un appuntamento
+    - Come posso cancellare una prenotazione?
+    - Come posso disdire un appuntamento?
+    - Elimina prenotazione
+    - Cancella Appuntamento
+    - Posso cancellare una prenotazione?
+    - Posso cancellare un appuntamento?
+    - Come faccio a cancellare un appuntamento?
+    - Come devo fare per eliminare una prenotazione?
+    - Cosa devo fare cancellare un appuntamento?
+    - Non voglio più tagliarmi i capelli
+
+
+- intent: modifica_prenotazione
+  examples: |
+    - Vorrei modificare una prenotazione
+    - Voglio cambiare un appuntamento
+    - Come posso cambiare una prenotazione?
+    - Come posso modificare un appuntamento?
+    - Modifica prenotazione
+    - Cambia Appuntamento
+    - Posso variare una prenotazione?
+    - Posso modificare il numero di una prenotazione?
+    - Posso modificare la data di un appuntamento?
+    - Posso modificare nome di un appuntamento?
+    - Posso cambiare il cognome di un appuntamento?
+    - Posso cambiare il numero di una prenotazione?
+    - Come faccio a variare un appuntamento?
+    - Come devo fare per cambiare una prenotazione?
+    - Cosa devo fare modificare un appuntamento?
+    - Voglio variare il numero con cui ho prenotato
+
+
+- intent: conferma
+  examples: |
+    - si
+    - ok
+    - certo
+    - va bene
+    - si si
+    - daje
+    - dai
+
+- intent: nega
+  examples: |
+    - no
+    - non
+    - proprio no
+    - va bene già com'è
+    - no no
+    - noooooo
+
+
+- intent: curiosità
+  examples: |
+    - Mi dici delle curiosità sui capelli?
+    - Parlami di alcune curiosità
+    - Como posso tagliarmi i capelli?
+    - Curiosità 
+
+
+- intent: consigli
+  examples: |
+    - Mi consigli qualche prodotto per capelli [crespi](prodotto)?
+    - Prodotti capelli [lisci](prodotto)
+    - Como posso aggiustare i capelli [ricci](prodotto)?
+
+
+- intent: info_orari
+  examples: |
+    - Quando vi trovo aperti?
+    - Voglio sapere gli orari di apertura
+    - orari
+    - date e orari
+    - oggi siete aperti?
+    - Siete aperti alle 13?
+    - Informazioni su orari apertura
+    - a che ora posso venire?
+    - mi dici a che ora siete aperti?
+
+
+
+- intent: info_località
+  examples: |
+    - Dove vi trovate?
+    - Come posso sapere dov'è il salone?
+    - Dove siete?
+    - In quale indirizzo posso cercare?
+    - Il salone è lontano dal centro?
+    - Dove si trova il salone?
+    - Informazioni sulla località
+
+
+- intent: info_contatti
+  examples: |
+    - Posso chiamare?
+    - Mi dai un numero telefonico dove posso chiamare?
+    - Posso parlare con un operatore?
+    - Vorrei avere il contatto del salone
+    - Voglio il numero del negozio
+    - Voglio chiamare il negozio
+    - dammi un contatto
+
+
+
+- intent: info_costo
+  examples: |
+    - Quanto pago per un taglio di capelli?
+    - Quanto costa fare una piega?
+    - Quanto costa?
+    - Quanto costa un taglio uomo?
+    - Quanto costa fare il colore?
+    - Informazioni su orari apertura
+    - Prezzi
+    - Costo
